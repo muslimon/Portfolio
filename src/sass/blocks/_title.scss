@@ -1,0 +1,60 @@
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    &_fz14{
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+    &_fz16_b {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+    &_fz48 {
+        font-size: 48px;
+        color: #ffffff;
+    }
+    &_fz36{
+        font-size: 36px;
+        line-height: 60px;
+    }
+    &_fz36_b{
+        font-size: 36px;
+        line-height: 60px;
+        color:#000000;
+    }
+    &_fz20{
+        font-size: 20px;
+        line-height: 30px;
+        color:#000000;
+    }
+
+    &__divider{
+        width: 60px;
+        height: 0px;
+        border: 3px solid $main-color;
+        margin: 25px auto 0 auto;
+    }
+
+    &__section-thetitle{
+        text-align: center;
+        z-index: 1;
+        position: relative;
+        @include before_circle;
+        &:before{
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+    }
+    &__section-thesubtitle {
+        text-align: center;
+    }
+}
